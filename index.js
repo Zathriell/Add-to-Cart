@@ -23,7 +23,7 @@ addButtonEl.addEventListener("click", function() {
 })
 
 onValue(shoppingListInDB, function(snapshot) {
-    if (snapshot.exist()) {
+    if (snapshot.exists()) {
         let itemsArray = Object.entries(snapshot.val())
 
         clearShoppingListEl()
